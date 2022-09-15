@@ -30,10 +30,10 @@
                     
                 </li>
                 <li>
-                    <a href="formulario_login.php">LOGIN</a>
+                    <a href="formulario_login.php" target="blank">LOGIN</a>
                 </li>
                  <li>
-                    <a href="#">COMO JOGAR?</a>
+                    <a href="instrucoes.php" target="blank">COMO JOGAR?</a>
                 </li>
                 <li>
                     <a href="#">CURIOSIDADES</a>
