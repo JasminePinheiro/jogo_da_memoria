@@ -29,7 +29,7 @@
                     
                 </li>
                 <li>
-                    <a href="#">LOGIN</a>
+                    <a href="formulario.php">LOGIN</a>
                 </li>
                  <li>
                     <a href="#">COMO JOGAR?</a>
