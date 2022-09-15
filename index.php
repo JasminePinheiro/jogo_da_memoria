@@ -18,8 +18,8 @@
 </head>
 
 <body>
-<?php echo'
-    <header>
+<?php 
+    echo'<header>
     <a href="https://www.instagram.com/kj_games1/" target="blank">
         <img src="imagens/logo1.png"> </a>
     
