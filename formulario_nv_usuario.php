@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/formulario_nv_usuario.css">
     <title>Formulario</title>
 </head>
 <body>
@@ -20,6 +20,9 @@
         <div class="login_box">
             <h2>Cadastra-se</h2>
             <form>
+            <div class="input_box">
+                    <input required type="nome" placeholder="Nome">
+                </div>
                 <div class="input_box">
                     <input required type="email" placeholder="Email ou número de telefone">
                 </div>
@@ -27,10 +30,12 @@
                 <div class="input_box">
                     <input required type="password" placeholder="Senha">
                 </div>
-
+                <div class="input_box">
+                    <input required type="password" placeholder="Confirme novamente a senha">
+                </div>
                 <div>
                     <button class="submit">
-                        Entrar
+                        Cadastrar
                     </button>
                 </div>
             </form>
@@ -50,7 +55,7 @@
             <div class="login_footer">
                 
                 <div class="sign_up">
-                    <p>Novo por aqui? <a href="#">Cadastra-se.</a></p>
+                    <p>Já tem uma conta? <a href="formulario.php">Entrar.</a></p>
                 </div>
 
                
