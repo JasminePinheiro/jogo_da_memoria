@@ -16,8 +16,9 @@
     <link rel="stylesheet"  href="css/footer.css">
     <script src="https://kit.fontawesome.com/8288920388.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
+<?php echo'
     <header>
     <a href="https://www.instagram.com/kj_games1/" target="blank">
         <img src="imagens/logo1.png"> </a>
@@ -29,7 +30,7 @@
                     
                 </li>
                 <li>
-                    <a href="formulario.php">LOGIN</a>
+                    <a href="formulario_login.php">LOGIN</a>
                 </li>
                  <li>
                     <a href="#">COMO JOGAR?</a>
@@ -69,6 +70,7 @@
     <footer>
     <p>Jogo criado em 2022 | Jasmine Pinheiro de Souza-GU302704X / Ketlyn Moraes Campos-GU3027678.
     </p>
-    </footer>
+    </footer>'
+    ?>
 </body>
 </html>

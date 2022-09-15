@@ -19,22 +19,22 @@
     <div class="login_body">
         <div class="login_box">
             <h2>Cadastra-se</h2>
-            <form>
+            <form action="action_form_cadastro.php" method="post">
             <div class="input_box">
-                    <input required type="nome" placeholder="Nome">
+                    <input required type="nome" name="txtnome" placeholder="Nome">
                 </div>
                 <div class="input_box">
-                    <input required type="email" placeholder="Email ou número de telefone">
+                    <input required type="email" name="txtemail" placeholder="Email ou número de telefone">
                 </div>
 
                 <div class="input_box">
-                    <input required type="password" placeholder="Senha">
+                    <input required type="password" name="txtsenha" placeholder="Senha">
                 </div>
                 <div class="input_box">
-                    <input required type="password" placeholder="Confirme novamente a senha">
+                    <input required type="password" name="txtconf_senha" placeholder="Confirme novamente a senha">
                 </div>
                 <div>
-                    <button class="submit">
+                <button class="submit" name="btnenviar" value="Enviar dados">
                         Cadastrar
                     </button>
                 </div>
@@ -55,7 +55,7 @@
             <div class="login_footer">
                 
                 <div class="sign_up">
-                    <p>Já tem uma conta? <a href="formulario.php">Entrar.</a></p>
+                    <p>Já tem uma conta? <a href="formulario_login.php">Entrar.</a></p>
                 </div>
 
                

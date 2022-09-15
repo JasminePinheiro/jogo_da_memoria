@@ -19,23 +19,23 @@
     <div class="login_body">
         <div class="login_box">
             <h2>Entrar</h2>
-            <form>
+            <form action="action_form_login.php" method="post">
                 <div class="input_box">
-                    <input required type="email" placeholder="Email ou número de telefone">
+                    <input required type="email" name="txtemail" placeholder="Email ou número de telefone">
                 </div>
 
                 <div class="input_box">
-                    <input required type="password" placeholder="Senha">
+                    <input required type="password" name="txtsenha"  placeholder="Senha">
                 </div>
 
                 <div>
-                    <button class="submit">
+                    <button class="submit" name="btnenviar" value="Enviar dados">
                         Entrar
                     </button>
                 </div>
             </form>
 
-            <div class="support">
+             <div class="support">
                 <div class="remember">
                     <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
                     <span>Lembre-se de mim</span>
@@ -50,7 +50,7 @@
             <div class="login_footer">
                 
                 <div class="sign_up">
-                    <p>Novo por aqui? <a href="formulario_nv_usuario.php">Cadastra-se.</a></p>
+                    <p>Novo por aqui? <a href="formulario_cadastro.php">Cadastra-se.</a></p>
                 </div>
 
                
