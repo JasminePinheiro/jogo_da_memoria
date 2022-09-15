@@ -50,7 +50,7 @@
             <div class="login_footer">
                 
                 <div class="sign_up">
-                    <p>Novo por aqui? <a href="formulario_cadastro.php">Cadastra-se.</a></p>
+                    <p>Novo por aqui? <a href="formulario_cadastro.php">Cadastre-se.</a></p>
                 </div>
 
                

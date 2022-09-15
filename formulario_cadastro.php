@@ -18,7 +18,7 @@
 
     <div class="login_body">
         <div class="login_box">
-            <h2>Cadastra-se</h2>
+            <h2>Cadastre-se</h2>
             <form action="action_form_cadastro.php" method="post">
             <div class="input_box">
                     <input required type="nome" name="txtnome" placeholder="Nome">
