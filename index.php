@@ -14,12 +14,14 @@
     <link rel="stylesheet"  href="css/header.css">
     <link rel="stylesheet"  href="css/main.css">
     <link rel="stylesheet"  href="css/footer.css">
+    <script src="https://kit.fontawesome.com/8288920388.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
     <a href="https://www.instagram.com/kj_games1/" target="blank">
-    <img src="imagens/logo.png" alt="logo"></a>
+        <img src="imagens/logo1.png"> </a>
+    
         <nav>
              <ul class="links-container">
                 <li>
@@ -36,11 +38,26 @@
         </nav>
     </header>
    <main>
-    <div class="content-container">
-    <div class="caixa"><h1 id="titulo">JOGO DA <br>
-    MEMÓRIA</h1></div>
-    </div>
-    <div class="social-container"></div>
+        <div class="caixa"><h1 id="titulo">JOGO DA <br>
+            MEMÓRIA</h1></div>
+        </div>
+        <div class="content-container">
+            <a href="#" class="button">
+                <p>PLAY &Rightarrow;</p>
+            </a>
+        </div>
+        <div class="social-container">
+            <ul>
+                <li>
+                <a href="https://www.instagram.com/kj_games1/" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=JvYtoAH_3o4" target="blank">
+                <i class="fa-brands fa-youtube"></i>
+            </li>
+            <ul>
+        </div>
     
     </main>
    
