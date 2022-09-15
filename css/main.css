@@ -1,0 +1,33 @@
+main{
+    flex-grow: 1;
+    display: flex;
+}
+.content-container{
+    flex-grow: 1;
+}
+.social-container{
+    background-color: lightgreen;
+    width: 48px;
+}
+h1#titulo{
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    background-position: 100% 100%;
+    font-family:'Sports World';
+    color:white;
+    font-size: 5em;
+    
+ }
+ div.caixa{
+    position: relative;
+    background-position: 100% 100%;
+    width: 500px;
+    height: 250px;
+    border: 7px solid;
+    border-color: red;
+    border-radius: 40px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
