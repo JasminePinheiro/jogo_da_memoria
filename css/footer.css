@@ -1,4 +1,11 @@
 footer{
-    background-color: violet;
-    height: 21px;
+    
+    height: 100px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 90%;
+    left: 30%;
 }

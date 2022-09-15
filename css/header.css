@@ -29,3 +29,20 @@ header{
  .links-container a:hover{
     background-color: #E62721;
 }
+@media (max-width:768px){
+    .links-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 65px;
+        font-size: 2.5rem;
+        padding: 30px 30px 25px 30px;
+        background-color: #000;
+        z-index: 1;
+    }
+}

@@ -8,11 +8,21 @@ body{
     height: 100vh;
     background: linear-gradient(90deg, #000,#000D 35%,#0000),
     url(../imagens/fundo.jpeg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-position: right;
     padding: 80px 128px 50px 128px;
+}
+@media (max-width:768px){
+    body{
+        padding: 30px 30px 25px 30px;
+        background-image: url(../imagens/fundo.jpeg);
+        background-color: #0005;
+        background-blend-mode: darken;
+    }
 }
 
 

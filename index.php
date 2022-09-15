@@ -25,7 +25,11 @@
         <nav>
              <ul class="links-container">
                 <li>
-                    <a href="#">HOME</a>
+                    <a href="http://localhost/lpi/projetos/jogo_da_memoria/index.php#">HOME</a>
+                    
+                </li>
+                <li>
+                    <a href="#">LOGIN</a>
                 </li>
                  <li>
                     <a href="#">COMO JOGAR?</a>
@@ -33,6 +37,7 @@
                 <li>
                     <a href="#">CURIOSIDADES</a>
                 </li>
+                
 
             <ul>
         </nav>
@@ -50,20 +55,20 @@
             <ul>
                 <li>
                 <a href="https://www.instagram.com/kj_games1/" target="blank">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
                 <a href="https://www.youtube.com/watch?v=JvYtoAH_3o4" target="blank">
-                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-youtube"></i></a><br>
             </li>
             <ul>
         </div>
     
     </main>
    
-   <footer>
-    
-      
-   </footer>
+    <footer>
+    <p>Jogo criado em 2022 | Jasmine Pinheiro de Souza-GU302704X / Ketlyn Moraes Campos-GU3027678.
+    </p>
+    </footer>
 </body>
 </html>

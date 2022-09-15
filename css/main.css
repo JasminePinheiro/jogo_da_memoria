@@ -48,8 +48,8 @@ main{
 
 }
 .social-container li{
-    height: 48px;
-    width: 48px;
+    height: 100px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
