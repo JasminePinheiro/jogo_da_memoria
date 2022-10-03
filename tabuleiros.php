@@ -2,25 +2,25 @@
 
 
 $tabuleiro1 = [
-    ["chair", "dog", "cat", "dog"],
-    ["guy", "laptop", "cat", "house"],
-    ["laptop", "ball", "chair", "guy"],
-    ["book", "ball", "book", "house"],
+    ["homem", "carnavais", "ventania", "carnavais"],
+    ["pierrete", "abaporu", "ventania", "artesao"],
+    ["abaporu", "operarios", "homem", "pierrete"],
+    ["estudante", "operarios", "estudante", "artesao"],
 ];
 
 
 $tabuleiro2 = [
-    ["laptop", "ball", "chair", "guy"],
-    ["chair", "dog", "cat", "dog"],
-    ["book", "ball", "book", "house"],
-    ["guy", "laptop", "cat", "house"]
+    ["abaporu", "operarios", "homem", "pierrete"],
+    ["homem", "carnavais", "ventania", "carnavais"],
+    ["estudante", "operarios", "estudante", "artesao"],
+    ["pierrete", "abaporu", "ventania", "artesao"]
 ];   
 
 $tabuleiro3 = [
-    ["book", "ball", "book", "house"],
-    ["chair", "dog", "cat", "dog"],
-    ["laptop", "ball", "chair", "guy"],
-    ["guy", "laptop", "cat", "house"]
+    ["estudante", "operarios", "estudante", "artesao"],
+    ["homem", "carnavais", "ventania", "carnavais"],
+    ["abaporu", "operarios", "homem", "pierrete"],
+    ["pierrete", "abaporu", "ventania", "artesao"]
 ];
 
 

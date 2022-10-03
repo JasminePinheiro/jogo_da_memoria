@@ -6,7 +6,7 @@
 </head>
 
 
-<h1 class="game-title">Jogo da memória</h1>
+<h1 class="game-title">Vamos nos divertir!!</h1>
 
 <?php
 
