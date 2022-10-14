@@ -19,7 +19,7 @@
     <div class="login_body">
         <div class="login_box">
             <h2>Cadastre-se</h2>
-            <form action="action_form_cadastro.php" method="post">
+            <form action="formulario_login.php" method="post">
             <div class="input_box">
                     <input required type="nome" name="txtnome" placeholder="Nome">
                 </div>
@@ -34,8 +34,8 @@
                     <input required type="password" name="txtconf_senha" placeholder="Confirme novamente a senha">
                 </div>
                 <div>
-                <button class="submit" name="btnenviar" value="Enviar dados">
-                        Cadastrar
+               <button class="submit" name="btnenviar" value="Enviar dados">
+              Cadastrar
                     </button>
                 </div>
             </form>

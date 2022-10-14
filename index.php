@@ -48,7 +48,7 @@
             MEMÓRIA</h1></div>
         </div>
         <div class="content-container">
-            <a href="game.php" class="button">
+            <a href="formulario_cadastro.php" class="button">
                 <p>PLAY &Rightarrow;</p>
             </a>
         </div>
