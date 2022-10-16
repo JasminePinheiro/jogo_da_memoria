@@ -19,7 +19,7 @@
     <div class="login_body">
         <div class="login_box">
             <h2>Entrar</h2>
-            <form action="game.php" method="post">
+            <form action="game_medio.php" method="post">
                 <div class="input_box">
                     <input required type="email" name="txtemail" placeholder="Email ou número de telefone">
                 </div>

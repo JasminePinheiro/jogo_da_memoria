@@ -23,7 +23,7 @@ if (isset($_POST['acao']) && $_POST['acao'] == "reset") {
 }
 
 
-require_once 'tabuleiros2.php';
+require_once 'tabuleiros_medio.php';
 
 
 
@@ -34,10 +34,12 @@ if ((isset($_POST['acao']) && $_POST['acao'] == "reset") || isset($_POST['acao']
 
 
     $_SESSION['tabResultado'] = [
-        [false, false, false, false],
-        [false, false, false, false],
-        [false, false, false, false],
-        [false, false, false, false]
+        [false, false, false, false, false, false],
+        [false, false, false, false, false, false],
+        [false, false, false, false, false, false],
+        [false, false, false, false, false, false],
+        [false, false, false, false, false, false],
+        [false, false, false, false, false, false],
     ];
 }
 
@@ -85,9 +87,9 @@ if (
     <div class="tabuleiro-container">
         <table class="table">
 
-            <?php for ($l = 0; $l < 2; $l++) {    ?>
+            <?php for ($l = 0; $l < 4; $l++) {    ?>
                 <tr>
-                    <?php for ($c = 0; $c < 2; $c++) {    ?>
+                    <?php for ($c = 0; $c < 4; $c++) {    ?>
 
                         <!-- mostra uma carta com conteúdo DA JOGADA ATUAL -->
                         <?php if (isset($_GET["l"]) && isset($_GET["c"]) && $_GET['l'] == $l && $_GET['c'] == $c) { ?>
