@@ -56,13 +56,17 @@ body::before {
 .niveis_body button {
     height: 50px;
     width: 100%;
-    color: #fff;
-  
     border-radius: 3px;
     font-weight: bold;
     font-size: 16px;
     border: none;
     margin-bottom: 10px;
+}
+
+.niveis_body a {
+    text-decoration: none;
+    color: #fff;
+    
 }
 
 .nivel_facil button {

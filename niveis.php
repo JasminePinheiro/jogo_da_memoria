@@ -21,20 +21,22 @@
             <form action="#" method="#">
                 <div class="nivel_facil">
                     <button>
-                    <a href="game_facil.php">FÁCIL</a>
+                <a href="game_facil.php">FÁCIL</a>
                     </button>
                 </div><br>
 
                 <div class="nivel_medio">
-                    <a href="game_media.php"><button class="submit" name="btnmedio" value="dificil"></a>
-                        MÉDIO
+                    <button>
+                    <a href="game_medio.php"> 
+                        MÉDIO</a>
                     </button>
                 </div><br>
                 
 
                 <div class="nivel_dificil">
-                    <a href="game_dificil.php"><button class="submit" name="btndificil" value="dificil"></a>
-                        DIFÍCIL
+                    <button>
+                    <a href="game_dificil.php">
+                         DIFÍCIL </a>
                     </button>
                 </div>
             </form>
