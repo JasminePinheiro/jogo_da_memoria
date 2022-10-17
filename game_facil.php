@@ -34,10 +34,9 @@ if ((isset($_POST['acao']) && $_POST['acao'] == "reset") || isset($_POST['acao']
 
 
     $_SESSION['tabResultado'] = [
-        [false, false, false, false],
-        [false, false, false, false],
-        [false, false, false, false],
-        [false, false, false, false]
+        [false, false],
+        [false, false]
+
     ];
 }
 
@@ -60,10 +59,8 @@ if (isset($_SESSION['numero_jogadas']) && $_SESSION['numero_jogadas'] == 2 &&  !
 
         //Mostra um aviso de parabéns na tela após acertar todos os pares das cartas.
         $array = [
-            [true, true, true, true],
-            [true, true, true, true],
-            [true, true, true, true],
-            [true, true, true, true]
+            [true, true],
+            [true, true]
         ];
         if ($_SESSION[ 'tabResultado'] == $array){
             echo
