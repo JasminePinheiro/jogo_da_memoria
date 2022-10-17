@@ -29,7 +29,7 @@
         
     
         }
-        div{
+        div {
             background-color: white;
             border-radius: 5px;
             box-shadow: 4px 4px 2px #84af9c70;
@@ -38,15 +38,42 @@
             margin: auto;
             height: auto;
         }
-        h1{
+        h1 {
             font-size: 2em;
             color: #8181F7;
         }
-        h2{
+        h2 {
             font-size: 1.2em;
         }
-        p{
+        p {
             font-weight: bolder;
+        }
+     
+        .voltar {
+            color: #737373;
+            font-size: 16px;
+            box-shadow: none;
+        }
+
+        .voltar a {
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: none;
+        }
+
+        .voltar a:hover {
+            text-decoration: underline;
+            box-shadow: none;
+        }
+        footer a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        }
+        footer a:hover{
+        text-decoration: underline;
+        color: red;
         }
         
       
@@ -81,7 +108,10 @@
             foreach ($v as $vetor){
                 echo $vetor." ";}
             }
+         
         ?>
-    </main>
+        <footer>
+                <br><a href="index.php"><p>Voltar para Página Inicial</a></p>
+        </footer>  
 </body>
 </html>
