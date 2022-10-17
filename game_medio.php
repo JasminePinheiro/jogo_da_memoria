@@ -142,7 +142,7 @@ if (
     <div style="text-align: center;padding:2em">
         <form method="POST">
             <input type="hidden" name='acao' value="reset" />
-            <input type="submit" value="Reset" style="font-size: 1.8em; background-color:red; color: white;" />
+            <input type="submit" value="Voltar" style="font-size: 1.8em; background-color:red; color: white;" />
         </form>
     </div>
 
@@ -152,7 +152,7 @@ if (
     <div style="text-align: center;padding:2em">
         <form method="POST">
             <input type="hidden" name='acao' value="start" />
-            <input type="submit" value="Start" style="font-size: 1.8em; background-color:green; color: white;" />
+            <input type="submit" value="Começar" style="font-size: 1.8em; background-color:green; color: white;" />
         </form>
     </div>
 
