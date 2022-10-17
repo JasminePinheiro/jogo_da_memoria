@@ -20,7 +20,7 @@ if (isset($_POST['acao']) && $_POST['acao'] == "reset") {
     session_start();   //Inicia a sessão que já foi criada
     unset($_GET['l']); //unset é uma função que tem a finalidade de remover uma variável
     unset($_GET['c']);
-    header("Location: index.php");
+    header("Location: niveis.php");
 }
 
 

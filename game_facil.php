@@ -19,7 +19,7 @@ if (isset($_POST['acao']) && $_POST['acao'] == "reset") {
     session_start();
     unset($_GET['l']);
     unset($_GET['c']);
-    header("Location: index.php");
+    header("Location: niveis.php");
 }
 
 
