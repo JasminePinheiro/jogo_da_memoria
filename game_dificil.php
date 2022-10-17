@@ -23,7 +23,7 @@ if (isset($_POST['acao']) && $_POST['acao'] == "reset") {
 }
 
 
-require_once 'tabuleiros_medio.php';
+require_once 'tabuleiros_dificil.php';
 
 
 
@@ -39,7 +39,7 @@ if ((isset($_POST['acao']) && $_POST['acao'] == "reset") || isset($_POST['acao']
         [false, false, false, false, false, false],
         [false, false, false, false, false, false],
         [false, false, false, false, false, false],
-        [false, false, false, false, false, false],
+        [false, false, false, false, false, false]
     ];
 }
 
