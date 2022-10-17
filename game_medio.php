@@ -10,26 +10,27 @@
 
 <?php
 
+//Inicia a sessão que já foi criada
 session_start();
 
-
+//Isset é uma função que tem a finalidade de verificar se uma variável existe ou se ela é null. 
 if (isset($_POST['acao']) && $_POST['acao'] == "reset") {
-    // pq??
-    session_destroy();
-    session_start();
-    unset($_GET['l']);
+   
+    session_destroy(); //Remove todos os dados associados com a sessão atual
+    session_start();   //Inicia a sessão que já foi criada
+    unset($_GET['l']); //unset é uma função que tem a finalidade de remover uma variável
     unset($_GET['c']);
     header("Location: index.php");
 }
 
 
-require_once 'tabuleiros_medio.php';
+require_once 'tabuleiros_medio.php'; //Está incluindo as matrizes das imagens de outro arquivo em PHP
 
 
 
 if ((isset($_POST['acao']) && $_POST['acao'] == "reset") || isset($_POST['acao']) && $_POST['acao'] == "start") {
     
-    $tabEscolhido = rand(0,2);
+    $tabEscolhido = rand(0,2);  //Gera matrizes aleatórias 
     $_SESSION['tabEscolhido'] = $tabEscolhido;
 
 
@@ -43,7 +44,7 @@ if ((isset($_POST['acao']) && $_POST['acao'] == "reset") || isset($_POST['acao']
 
 
 
-// limita as jogadas apenas até 2
+// Só pode verificar duas cartas por vez
 if (!isset($_SESSION['numero_jogadas']) || $_SESSION['numero_jogadas'] >= 2) {
     $_SESSION['numero_jogadas'] = 1;
 } else {
@@ -52,11 +53,27 @@ if (!isset($_SESSION['numero_jogadas']) || $_SESSION['numero_jogadas'] >= 2) {
 
 
 
-// Aqui nós setamos para TRUE quando o usuário acerta a carta!
+
+// Verficamos a carta que estamos clicando
 if (isset($_SESSION['numero_jogadas']) && $_SESSION['numero_jogadas'] == 2 &&  !isset($_POST['acao'])) {
+     //Se as duas cartas estiverem iguais, ele deixa fixado na tela.
     if (isset($_GET['l']) && isset($_GET['c']) && isset($_SESSION['valorLinha']) && isset($_SESSION['valorColuna']) &&  $tabuleiros[$_SESSION['tabEscolhido']][$_GET['l']][$_GET['c']] == $tabuleiros[$_SESSION['tabEscolhido']][$_SESSION['valorLinha']][$_SESSION['valorColuna']]) {
         $_SESSION['tabResultado'][$_GET['l']][$_GET['c']] = true;
         $_SESSION['tabResultado'][$_SESSION['valorLinha']][$_SESSION['valorColuna']] = true;
+
+         //Mostra um aviso de parabéns na tela após acertar todos os pares das cartas.
+         $array = [
+            [true, true, true, true],
+            [true, true, true, true],
+            [true, true, true, true],
+            [true, true, true, true]
+        ];
+        if ($_SESSION[ 'tabResultado'] == $array){
+            echo
+            '<script>   
+            alert("Parabéns, você finalizou o jogo!!!🥳🏆");
+            </script>';
+        }
     }
 }
 
@@ -69,11 +86,11 @@ if (isset($_SESSION['numero_jogadas']) && $_SESSION['numero_jogadas'] == 2 &&  !
 // $_SESSION['valorLinha']
 // $_SESSION['valorColuna']
 
-// verifica se você já fez 1 jogada
+// mostra se você já fez uma jogada
 if (
     isset($_GET["l"]) && isset($_GET["c"])
     && isset($_SESSION['numero_jogadas']) && $_SESSION['numero_jogadas'] == 1
-) { // verifica se você já fez uma jogada
+) { // mostra se você já fez uma jogada
     $_SESSION['valorLinha'] = $_GET['l'];
     $_SESSION['valorColuna'] = $_GET['c'];
 }
@@ -89,22 +106,22 @@ if (
                 <tr>
                     <?php for ($c = 0; $c < 4; $c++) {    ?>
 
-                        <!-- mostra uma carta com conteúdo DA JOGADA ATUAL -->
+                          <!-- aparece uma carta com a imagem DA JOGADA ATUAL -->
                         <?php if (isset($_GET["l"]) && isset($_GET["c"]) && $_GET['l'] == $l && $_GET['c'] == $c) { ?>
                             <td>
-                                <!-- mostra uma CARTA VIRADA PARA cima -->
+                                <!-- aparece uma CARTA VIRADA PARA cima -->
                                 <a href="?l=<?= $l ?>&c=<?= $c ?>">
                                     <img src="imagens/<?= $tabuleiros[$_SESSION['tabEscolhido']][$l][$c] ?>.png ">
                                 </a>
                             </td>
-                            <!-- mostra uma carta com conteúdo da jogada ANTERIOR -->
+                            <!-- aparece uma carta a imagem da jogada ANTERIOR -->
                         <?php } else if (
                             $_SESSION['numero_jogadas'] >= 1
                             && (isset($_SESSION['valorLinha']) && (isset($_SESSION['valorColuna'])))
                             && ($_SESSION['valorLinha'] == $l && $_SESSION['valorColuna'] == $c)
                         ) { ?>
 
-                            <!-- mostra uma CARTA VIRADA PARA CIMA -->
+                            <!-- aparece uma CARTA VIRADA PARA CIMA -->
                             <td>
                                 <a href="?l=<?= $_SESSION['valorLinha'] ?>&c=<?= $_SESSION['valorColuna'] ?>">
                                     <img src="imagens/<?= $tabuleiros[$_SESSION['tabEscolhido']][$_SESSION['valorLinha']][$_SESSION['valorColuna']] ?>.png ">
@@ -115,14 +132,14 @@ if (
                         if (isset($_SESSION['tabResultado']) && $_SESSION['tabResultado'][$l][$c] == true) {
                             ?>
 
-                            <!-- mostra uma CARTA VIRADA PARA CIMA -->
+                            <!-- aparece uma CARTA VIRADA PARA CIMA -->
                             <td>
                                 <img src="imagens/<?= $tabuleiros[$_SESSION['tabEscolhido']][$l][$c] ?>.png ">
                             </td>
 
                         <?php } else { ?>
 
-                            <!-- mostra uma CARTA VIRADA PARA BAIXO -->
+                            <!-- aparece uma CARTA VIRADA PARA BAIXO -->
                             <td><a href="?l=<?= $l ?>&c=<?= $c ?>">
                                     <img src="imagens/Carta.png ">
                             </td>

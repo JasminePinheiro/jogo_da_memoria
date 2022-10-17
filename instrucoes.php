@@ -16,36 +16,47 @@
             font-family: Arial, Helvetica, Sans-serif;
         }
         main {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 4px 3px 2px #84af9c70;
-        width: 600px;
-        padding: 20px;
-        margin: auto;
-        height: auto;
-        align-items: center;
-        justify-content: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 4px 3px 2px #84af9c70;
+            width: 600px;
+            padding: 20px;
+            margin: auto;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+        
+    
         }
         div{
             background-color: white;
-        border-radius: 5px;
-        //box-shadow: 4px 4px 2px #84af9c70;
-        width: 50px;
-        padding: 5px;
-        margin: auto;
-        height: auto;
+            border-radius: 5px;
+            box-shadow: 4px 4px 2px #84af9c70;
+            width: 50px;
+            padding: 5px;
+            margin: auto;
+            height: auto;
         }
-        p {
-            color: red;
+        h1{
+            font-size: 2em;
+            color: #8181F7;
+        }
+        h2{
+            font-size: 1.2em;
+        }
+        p{
             font-weight: bolder;
         }
+        
+      
     </style>
 </head>
 <body>
     <main>
         <?php
         echo "<h1>Como jogar?</h1>";
-        echo "<h2>Para jogar, basta seguir estes passos simples:";
+        echo "<h2>Para jogar, basta seguir estes passos simples:</h2>";
         ?>
         <ul>
             <li>Ao iniciar o jogo, clique em uma das figuras</li>
@@ -54,16 +65,22 @@
             <li>Você ganhará caso consiga encontrar todos os pares!</li>
         </ul>
         <?php
-        echo "<h1>Obras que você pode encontrar durante o jogo:</h1>";
-        $artes=array("A noite estrelada", "Operarios", "Cena de rua em Berlim", "A dança", "Viaduto de Estaque", "Persistência da memória", "Variante da tristeza");
-        print_r($artes);
-        echo "<h1>Dependendo do tempo que você leva no jogo sua menção pode ser:</h1>";
-        $mencao=array("Ótimo!", "Bom!", "Ruim!");
-        print_r($mencao);
-        echo "<h1>Durante o jogo você vai subindo de níveis, que serão:</h1>";
-        $nivel=array("Fácil", "Moderado", "Difícil");
-        print_r($nivel);
+        echo "<h2>Obras que você pode encontrar durante o jogo:</h2>";
+        $artes=array("Abaporu - Tarsila do Amaral,", "Operarios - Tarsila do Amaral,", "O Homem Amarelo - Anita Malfatti,", "Pierrete - Di Cavalcanti,", "O Artesão - Vicente do Rego Monteiro,", "Paisagem da Espanha - John Graz,", "A Estudante - Anita Malfatti,", "E muito mais!");
+        exibe_array($artes);
+        
+        echo "<h2>Dependendo do tempo que você leva no jogo sua menção pode ser:</h2>";
+        $mencao=array("Ótimo,", "Bom", "ou Ruim!");
+        exibe_array($mencao);
 
+        echo "<h2>Você pode escolher até três níveis no jogo:</h2>";
+        $nivel=array("Fácil,", "Médio", "e Difícil!");
+        exibe_array($nivel);
+
+        function exibe_array($v){
+            foreach ($v as $vetor){
+                echo $vetor." ";}
+            }
         ?>
     </main>
 </body>

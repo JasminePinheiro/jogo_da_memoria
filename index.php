@@ -35,10 +35,7 @@
                  <li>
                     <a href="instrucoes.php" target="blank">COMO JOGAR?</a>
                 </li>
-                <li>
-                    <a href="#">CURIOSIDADES</a>
-                </li>
-                
+                           
 
             <ul>
         </nav>
