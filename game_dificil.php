@@ -87,9 +87,9 @@ if (
     <div class="tabuleiro-container">
         <table class="table">
 
-            <?php for ($l = 0; $l < 4; $l++) {    ?>
+            <?php for ($l = 0; $l < 6; $l++) {    ?>
                 <tr>
-                    <?php for ($c = 0; $c < 4; $c++) {    ?>
+                    <?php for ($c = 0; $c < 6; $c++) {    ?>
 
                         <!-- mostra uma carta com conteúdo DA JOGADA ATUAL -->
                         <?php if (isset($_GET["l"]) && isset($_GET["c"]) && $_GET['l'] == $l && $_GET['c'] == $c) { ?>
