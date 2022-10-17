@@ -26,8 +26,6 @@
             align-items: center;
             justify-content: center;
             margin-top: 80px;
-        
-    
         }
         div {
             background-color: white;
@@ -47,33 +45,19 @@
         }
         p {
             font-weight: bolder;
-        }
-     
-        .voltar {
-            color: #737373;
-            font-size: 16px;
-            box-shadow: none;
+            text-align: center;
+
         }
 
-        .voltar a {
-            color: black;
-            font-size: 16px;
-            text-decoration: none;
-            box-shadow: none;
-        }
-
-        .voltar a:hover {
-            text-decoration: underline;
-            box-shadow: none;
-        }
         footer a {
-        color: black;
-        font-weight: bold;
-        text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
         }
         footer a:hover{
-        text-decoration: underline;
-        color: red;
+            text-decoration: underline;
+            color: red;
         }
         
       
@@ -111,7 +95,7 @@
          
         ?>
         <footer>
-                <br><a href="index.php"><p>Voltar para Página Inicial</a></p>
+                <br><p><a href="index.php"><p>Voltar para Página Inicial</a></p>
         </footer>  
 </body>
 </html>

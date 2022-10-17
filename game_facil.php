@@ -57,6 +57,20 @@ if (isset($_SESSION['numero_jogadas']) && $_SESSION['numero_jogadas'] == 2 &&  !
     if (isset($_GET['l']) && isset($_GET['c']) && isset($_SESSION['valorLinha']) && isset($_SESSION['valorColuna']) &&  $tabuleiros[$_SESSION['tabEscolhido']][$_GET['l']][$_GET['c']] == $tabuleiros[$_SESSION['tabEscolhido']][$_SESSION['valorLinha']][$_SESSION['valorColuna']]) {
         $_SESSION['tabResultado'][$_GET['l']][$_GET['c']] = true;
         $_SESSION['tabResultado'][$_SESSION['valorLinha']][$_SESSION['valorColuna']] = true;
+
+        //Mostra um aviso de parabéns na tela após acertar todos os pares das cartas.
+        $array = [
+            [true, true, true, true],
+            [true, true, true, true],
+            [true, true, true, true],
+            [true, true, true, true]
+        ];
+        if ($_SESSION[ 'tabResultado'] == $array){
+            echo
+            '<script>   
+            alert("Parabéns, você finalizou o jogo!!!🥳🏆");
+            </script>';
+        }
     }
 }
 
