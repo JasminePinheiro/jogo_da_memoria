@@ -80,10 +80,6 @@
         $artes=array("Abaporu - Tarsila do Amaral,", "Operarios - Tarsila do Amaral,", "O Homem Amarelo - Anita Malfatti,", "Pierrete - Di Cavalcanti,", "O Artesão - Vicente do Rego Monteiro,", "Paisagem da Espanha - John Graz,", "A Estudante - Anita Malfatti,", "E muito mais!");
         exibe_array($artes);
         
-        echo "<h2>Dependendo do tempo que você leva no jogo sua menção pode ser:</h2>";
-        $mencao=array("Ótimo,", "Bom", "ou Ruim!");
-        exibe_array($mencao);
-
         echo "<h2>Você pode escolher até três níveis no jogo:</h2>";
         $nivel=array("Fácil,", "Médio", "e Difícil!");
         exibe_array($nivel);
